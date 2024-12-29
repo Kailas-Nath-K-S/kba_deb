@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-100 relative dark:bg-gray-900 text-gray-900 dark:text-white"
+  >
+    <header class="bg-white fixed dark:bg-gray-800 shadow-md p-2 w-full">
+      <div class="flex items-center justify-between max-w-screen-xl mx-auto">
+        <div class="flex items-center space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+            />
+          </svg>
+
+          <img
+            src="assets/darkyoulogo.png"
+            alt="YouTube Logo"
+            class="w-24 hidden dark:block"
+          />
+          <img
+            src="assets/youlogo.png"
+            alt="YouTube Logo"
+            class="w-24 dark:hidden block"
+          />
+        </div>
+        <div class="flex items-center relative">
+          <input
+            type="text"
+            placeholder="Search"
+            class="p-2 w-96 border border-gray-300 dark:border-gray-600 rounded-full focus:outline-none dark:bg-gray-700 dark:text-white"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-10 w-12 absolute right-14 border-gray-300 dark:border-gray-600 dark:bg-gray-500 dark:text-white p-[10px] rounded-r-full"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-9 ml-5 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 p-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
+            />
+          </svg>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            <img src="assets/upload.png" class="rounded-full size-7" alt="" />
+          </div>
+          <button
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            <img src="assets/notification.png " class="size-5" alt="" />
+          </button>
+          <button
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+          >
+            <img
+              src="assets/user_profile.jpg"
+              class="rounded-full size-6"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex max-w-screen-xl mx-4 pt-6">
+      <div class="w-1/6 bg-white mt-14 dark:bg-gray-800 p-4 shadow-md mr-10">
+        <ul class="space-y-4">
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <div class="text-xl">
+              <img src="assets/home.png" alt="" />
+            </div>
+            <div>Home</div>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/explore.png" class="size-5" alt="" />
+            </span>
+            <span>Trending</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/subscriprion.png" class="size-6" alt="" />
+            </span>
+            <span>Subscriptions</span>
+          </li>
+          <hr />
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer text-lg font-semibold"
+          >
+            You
+          </li>
+
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/history.png" class="size-6" alt="" />
+            </span>
+            <span>History</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/library.png" class="size-6" alt="" />
+            </span>
+            <span>Playlists</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/like.png" class="size-6" alt="" />
+            </span>
+            <span>Liked Videos</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </span>
+            <span>Watch later</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+            </span>
+            <span>Downloads</span>
+          </li>
+          <hr />
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer text-lg font-semibold"
+          >
+            Explore
+          </li>
+
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/sports.png" class="size-6" alt="" />
+            </span>
+            <span>Sports</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/automobiles.png" class="size-6" alt="" />
+            </span>
+            <span>Automobiles</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/game_icon.png" class="size-6" alt="" />
+            </span>
+            <span>Games</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/music.png" class="size-6" alt="" />
+            </span>
+            <span>Music</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/blogs.png" class="size-6" alt="" />
+            </span>
+            <span>Blogs</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/tech.png" class="size-6" alt="" />
+            </span>
+            <span>Tech</span>
+          </li>
+          <li
+            class="flex items-center space-x-3 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg cursor-pointer"
+          >
+            <span class="text-xl">
+              <img src="assets/news.png" class="size-6" alt="" />
+            </span>
+            <span>News</span>
+          </li>
+        </ul>
+      </div>
+
+      <main>
+        <div class="flex justify-evenly mt-14">
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+          <button
+            class="bg-white dark:bg-gray-800 dark:white gray-400 p-2 rounded-full"
+          >
+            Sports
+          </button>
+        </div>
+        <div
+          class="flex-1 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 h-fit"
+        >
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/umepbfKp5rI"
+              frameborder="0"
+            ></iframe>
+            <div class="p-3 flex">
+              <div class="flex mr-2">
+                <img
+                  src="assets/user_profile.jpg"
+                  alt=""
+                  class="rounded-full size-7"
+                />
+              </div>
+              <div>
+                <p class="font-semibold text-lg dark:text-white">
+                  Video Title 1
+                </p>
+                <p class="text-gray-600 text-sm dark:text-gray-400">
+                  Channel Name
+                </p>
+                <p class="text-gray-400 text-xs dark:text-gray-500">
+                  1M views • 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
